@@ -19,7 +19,7 @@ const PORT = config.get("port") || 5000
 function start() {
     try {
         sql.connect(config.get('configsql'), () => {
-            app.listen(PORT, () => { console.log(`Server has been started on port ${PORT}...`) })
+            app.listen(PORT, "0.0.0.0", () => { console.log(`Server has been started on port ${PORT}...`) })
             sql.close()
         })
     }
