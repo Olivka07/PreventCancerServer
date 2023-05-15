@@ -1,0 +1,15 @@
+{
+    "port": 5000,
+    "configsql": {
+        "user": "Olivka07_SQLLogin_1",
+        "password": "gw4w5rvyyx",
+        "server": "VKRDataBase.mssql.somee.com",
+        "database": "VKRDataBase",
+        "options": {
+            "trustedConnection": true,
+            "enableArithAbort": true,
+            "instancename": "",
+            "trustServerCertificate": true
+        }
+    }
+}
