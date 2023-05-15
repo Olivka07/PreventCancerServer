@@ -5,6 +5,10 @@ const cors = require('cors')
 
 const app = express()
 
+app.use(cors({
+    origin: ["https://clientpreventcancer.onrender.com"]
+}))
+
 app.use(express.json({extended:true}))
 app.use('/api/auth', require('./routes/auth.routes'))
 app.use('/api/anketa', require('./routes/anketa.routes'))
